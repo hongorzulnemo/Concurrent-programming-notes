@@ -5,10 +5,10 @@
     }
 
 2.  class Blabla extends Thread {
-	  @override
-    public void run() {
-		  //do something
-	  }
+	@override
+    	public void run() {
+	    //do something
+	}
     }
     new Blabla().start();
 	or
@@ -28,6 +28,15 @@
 
 8.  Locks are methods of synchronization used to prevent multiple threads from accessing a resource at the same time.
 
-9. 
+9.  public synchronized void func1() {
+    	//do something
+    }
+    public void func2() {
+        synchronized(this) {
+	    //do something
+	}
+    }
+    func1 == func2 is true except for static methods.
 
+10.  
 
