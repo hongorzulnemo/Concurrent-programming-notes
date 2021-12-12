@@ -11,9 +11,8 @@
 	  }
     }
     new Blabla().start();
-    
-3.  Thread t2 = new Blabla();
-    or
+	or
+    Thread t2 = new Blabla();
     
 4.  We should use constructor to pass the param into run:
    
@@ -21,11 +20,14 @@
     new Thread(() -> {
 	    //do something
     }).start();
+    
 6.  concurrency != synchronization
 
 7.  Synchronization is not on the variable/classes. Synchronization is on the block/methods.
     Synchronized block/method is nothing but the thread safe block/method... so it does not allow two threads to access the resources simultaneously...
 
-8.  Locks are methods of synchronization used to prevent multiple threads from accessing a resource at the same time
+8.  Locks are methods of synchronization used to prevent multiple threads from accessing a resource at the same time.
+
+9. 
 
 
