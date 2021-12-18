@@ -38,5 +38,44 @@
     }
     func1 == func2 is true except for static methods.
 
-10.  
+10. public void func2(Collection<integer> iterable) {
+        synchronized(iterable) {
+	    //it means the data structure will be iterated synchronously
+	}
+    }
+    
+11. Atomic operations in concurrent programming are program operations that run completely independently of any other processes.
 
+12. Synchronizde protects the value of the class fom changing and let the threads wait for each other, not concurrent:
+    public class AnimalFarm() {
+        public integer cat;
+	public integer dog;
+
+        public int IncCatandDecDog() {
+	    //protects the dog value
+            synchronized(dog) {
+		if(this.dog<1) {
+	 	    this.dog--;
+		}
+		//protects the cat value
+		synchronized(cat) {
+		    this.cat += 1;
+		}
+	    }
+        }
+	
+	public int DecCatandIncDog() {
+	    //protects the cat value
+            synchronized(cat) {
+		if(this.cat<1) {
+	 	    this.cat--;
+		}
+		//protects the dog value
+		synchronized(dog) {
+		    this.dog += 1;
+		}
+	    }
+        }
+    }
+
+13. 
